@@ -16,15 +16,15 @@ const PORT = process.env.PORT || 3000
 
 
 app.listen(PORT, () => {
-    console.log('Server WORKS on port ' + PORT);
+    console.log('Server works on port ' + PORT);
 })
-mongoose.connect('mongodb://libreria:libreria1@ds243963.mlab.com:43963/libreria');
+mongoose.connect('mongodb://carolina:carolina1@ds243963.mlab.com:43963/libreria');
 const db = mongoose.connection;
-db.on('error', () => console.log("failed to connect to database"))
-    .once('open', () => console.log("Connected to the data base ", PORT))
+db.on('error', (err) => console.log("failed to connect to database",err))
+    .once('open', () => console.log("Connected to the database ", PORT))
 
 
-
+//Sonora:Lab1
 app.use((cors()));
 
 
