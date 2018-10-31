@@ -20,20 +20,7 @@ export const UserType = new GRAPHQL.GraphQLObjectType({
         },
         password : {
             type : GRAPHQL.GraphQLString
-        },
-        phone : {
-            type: GRAPHQL.GraphQLString
-        },
-        status : {
-            type: GRAPHQL.GraphQLString
-        },
-        avatar : {
-            type: GRAPHQL.GraphQLString
-        },
-        birthDate : {
-            type: GRAPHQL.GraphQLString
         }
-
     })
 
 })
@@ -53,18 +40,6 @@ export const UserInputType = new GRAPHQL.GraphQLInputObjectType({
         },
         password : {
             type : GRAPHQL.GraphQLString
-        },
-        phone : {
-            type: GRAPHQL.GraphQLString
-        },
-        status : {
-            type: GRAPHQL.GraphQLString
-        },
-        avatar : {
-            type: GRAPHQL.GraphQLString
-        },
-        birthDate : {
-            type: GRAPHQL.GraphQLString
         }
     })
 })

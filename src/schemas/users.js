@@ -22,24 +22,7 @@ const UserSchema = new Schema({
     'password': {
         type: String,
         require: true
-    },
-    'phone': {
-        type: Number
-    },
-    'status': {
-        type: String,
-
-    },
-    'avatar': {
-        type: String,
-        require: true
-    },
-    'birthDate': {
-        type: Date,
-
-    },
-
-
+    }
 }, { collection: 'users', timestamps: true });
 
 
